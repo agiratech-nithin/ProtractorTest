@@ -1,7 +1,7 @@
 import { AppPage } from './app.po';
 import { browser, by, element } from 'protractor';
 
-describe('angular2-registration-login-example-cli App', () => {
+describe('protractor test App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -14,7 +14,7 @@ describe('angular2-registration-login-example-cli App', () => {
   });*/
 
   it('new user registration', function() {
-  	browser.get('http://localhost:4202/register');
+  	browser.get('http://protractor-demo-app.herokuapp.com/register');
     element(by.id('firstName')).sendKeys('nithinkumar');
     element(by.id('lastName')).sendKeys('123456');
     element(by.id('userName')).sendKeys('nithin');
